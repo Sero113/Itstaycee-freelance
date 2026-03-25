@@ -75,7 +75,7 @@ function buildMobileMenuDrawer() {
       <div class="mobile-nav-footer">
         <div class="mobile-nav-section">
           <p class="mobile-nav-label">Let's Talk</p>
-          <a class="mobile-nav-email" href="mailto:hello@itstaycee.com">hello@itstaycee.com</a>
+          <a class="mobile-nav-email" href="mailto:Itstaycee@protonmail.com">Itstaycee@protonmail.com</a>
         </div>
         <div class="mobile-nav-section">
           <p class="mobile-nav-label">Socials</p>
