@@ -194,11 +194,17 @@ document.addEventListener("DOMContentLoaded", () => {
     video.autoplay = true;
     video.loop = true;
     video.playsInline = true;
+    video.controls = false;
     video.setAttribute("muted", "");
     video.setAttribute("autoplay", "");
     video.setAttribute("loop", "");
     video.setAttribute("playsinline", "");
     video.setAttribute("webkit-playsinline", "");
+    video.setAttribute("preload", "auto");
+    video.setAttribute("disablepictureinpicture", "");
+    video.setAttribute("controlslist", "nodownload nofullscreen noremoteplayback");
+    video.setAttribute("x-webkit-airplay", "deny");
+    video.removeAttribute("controls");
 
     const playPromise = video.play();
     if (playPromise && typeof playPromise.catch === "function") {
@@ -350,7 +356,7 @@ document.addEventListener("DOMContentLoaded", function () {
   navLinks.forEach(link => {
     const linkPath = link.getAttribute("href").split("/").pop();
 
-    if (currentLocation === linkPath || (isProjectDetailPage && linkPath === "projects.html")) {
+    if (currentLocation === linkPath || (isProjectDetailPage && linkPath === "index.html")) {
       link.classList.add("active");
       isActive = true;
     } else {
