@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" href="/tc-logo-black-favicon.png">
+    <title>Itstaycee</title>
+</head>
+<body>
+    <!-- This is The Navigation Section -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="projects.html" class="nav-logo">
+                <img src="/images/TC-logo-white.webp" alt="Logo">
+                <div class="nav-text">
+                    <h6>Itstaycee</h6>
+                    <p>Graphic Designer</p>
+                </div>
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="projects.html" class="nav-link nav-link-ltr">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="shop.html" class="nav-link nav-link-ltr">Shop</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html" class="nav-link nav-link-ltr">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a href="info.html" class="nav-link nav-link-ltr-1">Info</a>
+                </li>
+
+            </ul>
+            <button class="hamburger" aria-label="Hamburger-Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+            </button>
+        </nav>
+</header>
+
+<section class="contact-page fade-in">
+    <div class="contact-cta">
+        <h1>Let’s connect!</h1>
+        <p>For commissions and project inquiries, send a message below or email me directly.</p>
+    </div>
+
+    <div class="contact-layout">
+        <aside class="contact-side">
+            <p class="contact-side-label">Direct Contact</p>
+            <a class="contact-side-email" href="mailto:hello@itstaycee.com">hello@itstaycee.com</a>
+        </aside>
+
+        <section class="contact-services" aria-labelledby="ways-to-work-together">
+            <h2 class="contact-services-kicker" id="ways-to-work-together">Ways to Work Together</h2>
+            <p class="contact-services-intro">A quick look at the types of projects you can inquire about before sending your message.</p>
+
+            <div class="contact-service-list">
+                <div class="contact-service-item" data-label="Brand Starter">
+                    <h3>Identity foundations</h3>
+                    <p>Logo direction, color palette, typography, and a clean starting point for brands that need a professional launch presence.</p>
+                </div>
+
+                <div class="contact-service-item" data-label="Clothing Design">
+                    <h3>Clothing Design</h3>
+                    <p>Custom apparel concepts for brands and creators, built to align with your identity and production goals.</p>
+                </div>
+
+                <div class="contact-service-item" data-label="Merch Design">
+                    <h3>Merch Design</h3>
+                    <p>Custom merch concepts for artists, creators, and personal brands that need standout pieces built for launch.</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="contact-form-card">
+            <h2>Send a message</h2>
+            <form action="https://api.web3forms.com/submit" method="POST" id="contactForm" class="contact-form-modern">
+                <input type="hidden" name="access_key" value="9239a267-365d-4e4d-b724-c74b11a16d9c">
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="project_type">Project Type</label>
+                    <select id="project_type" name="project_type">
+                        <option value="">Select a project type</option>
+                        <option value="Brand Starter">Brand Starter</option>
+                        <option value="Clothing Design">Clothing Design</option>
+                        <option value="Merch Design">Merch Design</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Write a message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+
+                <button type="submit" class="view-work-button contact-submit">Send Message</button>
+            </form>
+
+            <div class="contact-socials">
+                <p>Or connect on socials:</p>
+                <a href="https://www.instagram.com/itstaycee/?hl=en" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <span>·</span>
+                <a href="https://www.tiktok.com/@tayycee__?lang=en" target="_blank" rel="noopener noreferrer">TikTok</a>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+<script src="/JS/java.js"></script>
+</html>
